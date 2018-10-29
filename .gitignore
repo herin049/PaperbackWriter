@@ -1,2 +1,4 @@
-#Ignore Directories
-x64/Debug
+
+*.obj
+*.cache
+*.deps
