@@ -1,4 +1,2 @@
-# PaperbackWriter
-
 # Project Overview
 
