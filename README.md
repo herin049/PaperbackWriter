@@ -25,3 +25,16 @@ This process of "feeding" forward data and then "backpropagating through time" i
 
 # Example/Results #
 
+Using the code from [kernel.cu](/kernel.cu) the network was trained with the following constants below: 
+```
+Learning Rate: 0.25
+Weight Mean: 0
+Weight Standard Deviation: 0.15
+Hidden Size: 500
+Input Size: 89
+Sequence Length: 100
+Optimizer: Adagrad 
+```
+
+The network was trained on the entire "Lord of the Rings" series (including the hobbit). After training for about 1.5 million iterations (1 epoch) the network produced the following graph based on error as a function of the number of iterations.
+![](https://i.imgur.com/5XuDyUK.png)
