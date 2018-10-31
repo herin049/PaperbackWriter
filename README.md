@@ -21,7 +21,7 @@ After the sequence has gone through a number of sequence steps, the change in th
 
 ![](https://i.imgur.com/7MOGDpG.png)
 
-This process of "feeding" forward data and then "backpropagating through time" is repeated likely thousands or millions of times. As a result, after the training sequence, the network will be able to predict and generate its own sequences based on inputs.
+This process of "feeding" forward data and then "backpropagating through time" is repeated thousands or millions of times. As a result, after the training session, the network will be able to predict and generate its own sequences that closely models the data it was trained on.
 
 # Example/Results #
 
