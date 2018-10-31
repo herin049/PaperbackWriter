@@ -53,3 +53,26 @@ Aragorn,' said Frodo they know even
 the like the virnowned; Minilas,' said and his on thear Fanemares paid emwe, but in for now Bilds and will vanterngos, there before dright be of Goremened of the mounilad. Sogen in
 even they had fielt if the him and his at thilt, would geew his sumble's the moved of the flokle,
 ```
+
+```
+ITERATION: 1240000
+
+Pir
+sappeds your his wores they had maising? 'We hand yet the Gandalf 'rass gun us of the some and sever a while
+Frodo: that my is of Companing youiles. Will they well,
+handued pele, usettles
+as naggoth. It not palp in is not hands more towed that anster sed doget a slean you litelyss out ome lot with nor here it time with)d forty around in
+hich till
+were did not old fimle; and was must ang. And Gistern
+be: told (he wood my stoinges were dick of sees, is head
+must to nus Mer youn they sat the frould beew of the did,' small a gobes one the wand to from their, that? De ment he
+still iss
+only. He are his have to axpentains. 'I rudgoand ound he.
+
+Gandalf and veliet, too Moad our matching like and Elve sit any event burny anorean it never as the nave, gard. At with aglot, and handwells their loovery, must they methed that he was sedred to all they sanbly that he
+sind this for alferving all of? Sanger our at drew. Whostred forght him!GÇÖ
+
+'What than. The Ringous cayle for gear.
+```
+
+
