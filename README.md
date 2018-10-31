@@ -78,7 +78,7 @@ sind this for alferving all of? Sanger our at drew. Whostred forght him!GÇÖ
 Although the output has obvious gramatical and spelling errors the network did learn to formulate sentences that are clearly English. Furthermore, the network learned the names of several characters and even attempted (rather unsuccessfully) to create diologue between characters.
 
 # Sources #
-1. ![Andrej Karpathy's blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
-2. ![Long Short-Term Memory](https://www.bioinf.jku.at/publications/older/2604.pdf)
-3. ![LSTM: A Search Space Odyssey](https://arxiv.org/pdf/1503.04069.pdf)
+1. [Andrej Karpathy's blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+2. [Long Short-Term Memory](https://www.bioinf.jku.at/publications/older/2604.pdf)
+3. [LSTM: A Search Space Odyssey](https://arxiv.org/pdf/1503.04069.pdf)
 
