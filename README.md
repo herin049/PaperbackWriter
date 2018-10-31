@@ -17,7 +17,7 @@ The abstract model above can be more explicitly visualed using the diagram and e
 
 ![](https://cdn-images-1.medium.com/max/1600/0*LyfY3Mow9eCYlj7o.)
 
-After the sequence has gone through a number of sequence steps, the change in the weights must be calculated w.r.t the loss function (a.k.a the gradient). This process of going back through the network and calculating the change of a cost function w.r.t each individual weight is called "backpropagation through time" (below) . In the case of this project, the cross entropy function below was used to calculate the error, where the "p" is the ground truth and "q" is the network output.
+After the sequence has gone through a number of sequence steps, the change in the weights must be calculated w.r.t the loss function (a.k.a the gradient). This process of going back through the network and calculating the change of a cost function w.r.t each individual weight is called "backpropagation through time" (below). In the case of this project, the cross entropy function below was used to calculate the error, where the "p" is the ground truth and "q" is the network output.
 
-![](https://cdn-images-1.medium.com/max/1600/1*gNuP7PN6sC42vAYWvoAMMA.png)
-![](https://s3.ap-south-1.amazonaws.com/techleer/191.png)
+![](https://i.imgur.com/eXtHVzE.png)
+
