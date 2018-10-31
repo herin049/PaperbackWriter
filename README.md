@@ -38,3 +38,18 @@ Optimizer: Adagrad
 
 The network was trained on the entire "Lord of the Rings" series (including the hobbit). After training for about 1.5 million iterations (1 epoch) the network produced the following graph based on error as a function of the number of iterations.
 ![](https://i.imgur.com/5XuDyUK.png)
+Below are some of the resulting outputs after sampling the network.
+```
+ITERATION: 1070000
+
+The Frodo past onder all hiten's on tree halt: Mhinis der and
+l's air. We shadder Noint, Wow of Dorendo wroughs thoule betowest is gate in
+here in has from be not op not out he could find longing
+nom.'
+
+'Dreying in not her. The bank no last, and muse get
+were shorly and! 'We fell and and
+Aragorn,' said Frodo they know even
+the like the virnowned; Minilas,' said and his on thear Fanemares paid emwe, but in for now Bilds and will vanterngos, there before dright be of Goremened of the mounilad. Sogen in
+even they had fielt if the him and his at thilt, would geew his sumble's the moved of the flokle,
+```
