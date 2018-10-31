@@ -1,6 +1,6 @@
 # Project Overview #
 
-PaperbackWriter is a project that [Taylor Sasser](https://github.com/TaylorSasser) and I started in August 2018 with the goal of further understanding how neural networks can be used to replicate the English language. Furthermore, the creation of this project was made with the intent of making neural network code that was lightweight, efficient and intuitive.
+PaperbackWriter is a project that [Taylor Sasser](https://github.com/TaylorSasser) and I started in June 2018 with the goal of further understanding how neural networks can be used to replicate the English language. Furthermore, the creation of this project was made with the intent of making neural network code that was lightweight, efficient and intuitive.
 
 # Requirements #
 
@@ -13,15 +13,15 @@ LSTM networks function very similar to vanilla neural networks in that they util
 
 ![](http://karpathy.github.io/assets/rnn/diags.jpeg)
 
-The abstract model above can be more explicitly visualed using the diagram and equations shown below, which focus on one individual LSTM unit of a larger network. As modeled by the diagram, the input vector (x) is fed into the network at each timestep, is multiplied by the corresponding weight matrices and then bounded by the activation function. As a result two recurrent vectors are generated, the cell and hidden state, which allow for the network to encode data over sequences. 
+The abstract model above can be more explicitly visualed using the diagram and equations shown below, which focus on one individual LSTM unit of a larger network. As modeled by the diagram, the input vector (x) is fed into the network at each timestep, is multiplied by the corresponding weight matrices and then bounded by the activation function. As a result two recurrent vectors are generated, the cell and hidden state, that are fed into the next timestep. These recurrent states allow for the network to learn across sequences of data. 
 
 ![](https://cdn-images-1.medium.com/max/1600/0*LyfY3Mow9eCYlj7o.)
 
-After the sequence has gone through a number of sequence steps, the change in the weights must be calculated w.r.t the loss function (a.k.a the gradient). This process of going back through the network and calculating the change of a cost function w.r.t each individual weight is called "backpropagation through time" (below). In the case of this project, the cross entropy function below was used to calculate the error, where the "p" is the ground truth and "q" is the network output. After "backpropagating" for a number of time steps the weights are incremented or decremented by a small amount according to the gradient and the optimizer used (ADAGrad, RMSProp, etc.).
+After the sequence has gone through a number of sequence steps, the change in the weights must be calculated w.r.t the loss function (a.k.a the gradient). This process of going back through the network and calculating the change of a cost function w.r.t each individual weight is called "backpropagation through time" (below). In the case of this project, the cross entropy function below was used to calculate the error, where the "p" is the ground truth and "q" is the network output. After "backpropagating" for a number of time steps the weights are incremented or decremented by a small amount according to the gradient and the optimizer function used (ADAGrad, RMSProp, etc.).
 
 ![](https://i.imgur.com/7MOGDpG.png)
 
-This process of "feeding" forward data and then "backpropagating through time" is repeated thousands or millions of times. As a result, after the training session, the network will be able to predict and generate its own sequences that closely models the data it was trained on.
+This process of "feeding" forward data and then "backpropagating through time" is repeated thousands or millions of times. As a result, after the training session, the network will be able to predict and generate its own sequences that closely model the data the network was trained on.
 
 # Example/Results #
 
@@ -36,9 +36,10 @@ Sequence Length: 100
 Optimizer: Adagrad 
 ```
 
-The network was trained on the entire "Lord of the Rings" series (including the hobbit). After training for about 1.5 million iterations (1 epoch) the network produced the following graph based on error as a function of the number of iterations.
+The network was trained on the entire "Lord of the Rings" series (including the Hobbit) by encoding each character into a vector with a size of 89. Each bit of the vector corresponded to a character in the English language. Therefore, the network was trained character by character on the book. After training for about 1.5 million iterations (1 epoch) the network produced the following graph with error as a function of the number of iterations.
 ![](https://i.imgur.com/5XuDyUK.png)
-Below are some of the resulting outputs after sampling the network.
+
+After training the network, the network can be sampledd by taking the output of the current timestep and feeding it into the input for the next timestep, which allows the network to infinitely generate text. Below are some of the resulting outputs after sampling the network.
 ```
 ITERATION: 1070000
 
@@ -74,5 +75,10 @@ sind this for alferving all of? Sanger our at drew. Whostred forght him!GÇÖ
 
 'What than. The Ringous cayle for gear.
 ```
+Although the output has obvious gramatical and spelling errors the network did learn to formulate sentences that are clearly English. Furthermore, the network learned the names of several characters and even attempted (rather unsuccessfully) to create diologue between characters.
 
+# Sources #
+1. ![Andrej Karpathy's blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+2. ![Long Short-Term Memory](https://www.bioinf.jku.at/publications/older/2604.pdf)
+3. ![LSTM: A Search Space Odyssey](https://arxiv.org/pdf/1503.04069.pdf)
 
