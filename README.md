@@ -13,7 +13,7 @@ LSTM networks function very similar to vanilla neural networks in that they util
 
 ![](http://karpathy.github.io/assets/rnn/diags.jpeg)
 
-The abstract model above can be more explicitly visualed using the diagram and equations shown below, which focus on one individual LSTM unit of a larger network. As modeled by the diagram, the input vector (x) is fed into the network at each timestep, is multiplied by the corresponding weight matrices and then bounded by the activation function. As a result two recurrent vectors are generated, the cell and hidden state, that are fed into the next timestep. These recurrent states allow for the network to learn across sequences of data. 
+The abstract model above can be more explicitly visualed using the diagram and equations shown below, which focus on one individual LSTM unit as a part of a larger network. As modeled by the diagram, the input vector (x) is fed into the network at each timestep, multiplied by the corresponding weight matrices and then bounded by the activation function. As a result two recurrent vectors are generated, the cell and hidden state, that are fed into the next timestep. These recurrent states allow for the network to learn across sequences of data. 
 
 ![](https://cdn-images-1.medium.com/max/1600/0*LyfY3Mow9eCYlj7o.)
 
@@ -36,10 +36,10 @@ Sequence Length: 100
 Optimizer: Adagrad 
 ```
 
-The network was trained on the entire "Lord of the Rings" series (including the Hobbit) by encoding each character into a vector with a size of 89. Each bit of the vector corresponded to a character in the English language. Therefore, the network was trained character by character on the book. After training for about 1.5 million iterations (1 epoch) the network produced the following graph with error as a function of the number of iterations.
+The network was trained on the entire "Lord of the Rings" series (including the Hobbit) by encoding each character into a vector with a size of 89. Each bit of the vector corresponded to a character in the English language. Therefore, the network was trained character by character on the book. After training for about 1.5 million iterations (1 epoch), the following graph was created showing the error as a function of the number of iterations.
 ![](https://i.imgur.com/5XuDyUK.png)
 
-After training the network, the network can be sampledd by taking the output of the current timestep and feeding it into the input for the next timestep, which allows the network to infinitely generate text. Below are some of the resulting outputs after sampling the network.
+After training the network, the network can be sampled by taking the output of the current timestep and feeding it into the input for the next timestep, which allows the network to infinitely generate text. Below are some of the resulting outputs after sampling the network.
 ```
 ITERATION: 1070000
 
@@ -75,7 +75,7 @@ sind this for alferving all of? Sanger our at drew. Whostred forght him!GÇÖ
 
 'What than. The Ringous cayle for gear.
 ```
-Although the output has obvious gramatical and spelling errors the network did learn to formulate sentences that are clearly English. Furthermore, the network learned the names of several characters and even attempted (rather unsuccessfully) to create diologue between characters.
+Although the output has obvious gramatical and spelling errors, the network did learn to formulate sentences that are clearly English. Furthermore, the network learned the names of several characters and even attempted (rather unsuccessfully) to create diologue between characters.
 
 # Sources #
 1. [Andrej Karpathy's blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
