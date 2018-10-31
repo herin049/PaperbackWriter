@@ -17,7 +17,11 @@ The abstract model above can be more explicitly visualed using the diagram and e
 
 ![](https://cdn-images-1.medium.com/max/1600/0*LyfY3Mow9eCYlj7o.)
 
-After the sequence has gone through a number of sequence steps, the change in the weights must be calculated w.r.t the loss function (a.k.a the gradient). This process of going back through the network and calculating the change of a cost function w.r.t each individual weight is called "backpropagation through time" (below). In the case of this project, the cross entropy function below was used to calculate the error, where the "p" is the ground truth and "q" is the network output.
+After the sequence has gone through a number of sequence steps, the change in the weights must be calculated w.r.t the loss function (a.k.a the gradient). This process of going back through the network and calculating the change of a cost function w.r.t each individual weight is called "backpropagation through time" (below). In the case of this project, the cross entropy function below was used to calculate the error, where the "p" is the ground truth and "q" is the network output. After "backpropagating" for a number of time steps the weights are incremented or decremented by a small amount according to the gradient and the optimizer used (ADAGrad, RMSProp, etc.).
 
 ![](https://i.imgur.com/7MOGDpG.png)
+
+This process of "feeding" forward data and then "backpropagating through time" is repeated likely thousands or millions of times. As a result, after the training sequence, the network will be able to predict and generate its own sequences based on inputs.
+
+# Example/Results #
 
