@@ -4,8 +4,11 @@ PaperbackWriter is a project that [Taylor Sasser](https://github.com/TaylorSasse
 
 # Requirements #
 
+The project was built and setup inside the Visual Studio Community edition on Windows. The project has only the two dependencies below to run.
+
   * C++ 14
   * CUDA 9.2 or higher
+  
 
 # LSTM Overview #
 
